@@ -91,7 +91,7 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify({
         from: 'Formulario Web <info@maferai.es>',
-        to: ['fernando@maferai.es'],
+        to: ['info@maferai.es'],
         reply_to: data.workEmail,
         subject: `Nuevo lead: ${data.name} · ${data.company || 'Sin empresa'}`,
         html: emailHtml,
