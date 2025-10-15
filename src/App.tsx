@@ -1,4 +1,4 @@
-import { ArrowRight, Target, Search, CheckCircle2, Calendar, TrendingUp, Users, DollarSign, Sparkles, Zap, Shield, Clock, TrendingDown, ChevronRight, BarChart3, Database, Building2, Rocket, Star, Cpu, UsersRound, Zap as Energy, ShoppingBag, Truck, HeartPulse, Factory, FlaskConical, Banknote, Radio } from 'lucide-react';
+import { ArrowRight, Target, Search, CheckCircle2, Calendar, Users, Sparkles, Zap, Shield, Clock, TrendingDown, ChevronRight, Rocket, Cpu, UsersRound, ShoppingBag, Truck, HeartPulse, Factory, FlaskConical, Banknote, Radio } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 function App() {
