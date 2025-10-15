@@ -71,7 +71,7 @@ Fecha: ${new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}
       },
       body: JSON.stringify({
         from: 'MAFER CAPITAL <contacto@mafer.app>',
-        to: ['info@mafer.app'],
+        to: ['info@maferai.es'],
         reply_to: formData.email,
         subject: `Nuevo contacto: ${formData.nombre} - ${formData.empresa}`,
         text: emailBody,
