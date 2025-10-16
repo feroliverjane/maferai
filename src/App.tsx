@@ -146,7 +146,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white overflow-hidden">
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/95 border-b-2 border-white">
-        <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
           <div className="flex items-center">
             <img src="/mafer-capital-logo.svg" alt="MAFER CAPITAL" className="h-16 w-auto" />
           </div>
@@ -167,7 +167,7 @@ function App() {
         </div>
       </header>
 
-      <section id="inicio" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+      <section id="inicio" className="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#5B7FFF] rounded-full blur-[150px] opacity-20 animate-pulse"></div>
           <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#7B9FFF] rounded-full blur-[150px] opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
