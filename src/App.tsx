@@ -74,17 +74,23 @@ function App() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/.netlify/functions/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok && data.success) {
+      // Check if we're in development mode (no Netlify functions available)
+      const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      
+      if (isDevelopment) {
+        // Development mode: simulate form submission
+        console.log('Form submission data:', formData);
+        
+        // Basic validation
+        if (!formData.name || !formData.workEmail || !formData.message) {
+          setSubmitStatus('error');
+          return;
+        }
+        
+        // Simulate API call delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        // Simulate successful submission
         setSubmitStatus('success');
         setFormData({
           name: '',
@@ -97,8 +103,34 @@ function App() {
           botField: ''
         });
       } else {
-        setSubmitStatus('error');
+        // Production mode: use Netlify function
+        const response = await fetch('/.netlify/functions/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          setSubmitStatus('success');
+          setFormData({
+            name: '',
+            company: '',
+            title: '',
+            workEmail: '',
+            sector: '',
+            revenueTarget: '',
+            message: '',
+            botField: ''
+          });
+        } else {
+          setSubmitStatus('error');
+        }
       }
+      
     } catch (error) {
       console.error('Error al enviar formulario:', error);
       setSubmitStatus('error');

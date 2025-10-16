@@ -90,8 +90,8 @@ exports.handler = async (event) => {
         'Authorization': `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: 'Formulario Web <info@maferai.es>',
-        to: ['fernando@maferai.es'],
+        from: 'MAFER AI Contact Form <onboarding@resend.dev>',
+        to: ['fernando@mafer.app'],
         reply_to: data.workEmail,
         subject: `Nuevo lead: ${data.name} · ${data.company || 'Sin empresa'}`,
         html: emailHtml,
