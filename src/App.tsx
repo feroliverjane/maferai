@@ -148,7 +148,7 @@ function App() {
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/95 border-b-2 border-white">
         <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/ChatGPT Image 10 oct 2025, 16_32_26.png" alt="MAFER CAPITAL" className="h-16 w-40 object-cover object-center" style={{ objectPosition: 'center' }} />
+            <img src="/mafer-capital-logo.svg" alt="MAFER CAPITAL" className="h-16 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#inicio" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">Inicio</a>
