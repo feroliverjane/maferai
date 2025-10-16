@@ -438,7 +438,7 @@ function App() {
                 <p className="text-gray-400">Flexibilidad máxima</p>
               </div>
               <div className="mb-8">
-                <div className="text-6xl font-bold mb-2">200€</div>
+                <div className="text-6xl font-bold mb-2">400€</div>
                 <div className="text-gray-400 text-lg">por target cualificado</div>
               </div>
               <ul className="space-y-4 mb-8">
@@ -452,7 +452,7 @@ function App() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#5B7FFF] mt-1 flex-shrink-0" />
-                  <span className="text-gray-300">400€ por reunión con targets internacionales</span>
+                  <span className="text-gray-300">600€ por reunión con targets internacionales</span>
                 </li>
               </ul>
               <button
@@ -474,7 +474,7 @@ function App() {
                   <p className="text-blue-100">Para dealflow continuo</p>
                 </div>
                 <div className="mb-8">
-                  <div className="text-6xl font-bold mb-2">1.500€</div>
+                  <div className="text-6xl font-bold mb-2">2.500€</div>
                   <div className="text-blue-100 text-lg">2 reuniones por semana</div>
                 </div>
                 <ul className="space-y-4 mb-8">
